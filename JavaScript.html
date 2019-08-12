@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>Ejemplo de JavaScript</title>
+ </head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <body>
+  	Ingrese su mensaje: 
+  	<script language=javascript>
+      function openwindow() {
+        m = window.open("https://www.javascript.com/");
+      }
+      function closewindow() {
+        m.close()
+      }
+       function myfunction(txt){
+        alert(txt)
+      }
+
+  function info(cadena) {
+  var Result = "La cadena \""+cadena+"\" ";
+  if(cadena == cadena.toUpperCase()) {
+    Result += " está formada sólo por mayúsculas";
+  }
+  else if(cadena == cadena.toLowerCase()) {
+    Result += " está formada sólo por minúsculas";
+  }
+  else {
+    Result += " está formada por mayúsculas y minúsculas";
+  }
+ alert(Result);
+}
+
+    </script>
+     <form name="form1">
+      <input name="entrada">
+      <input type="button" onclick="myfunction(form1.entrada.value)"value="Mostrar">
+      <input type="button" onclick="info(form1.entrada.value)"value="Evaluar">
+    </form>
+  </body>
+</noscript>
+
+<div style="text-align: center;"><div style="position:relative; top:0; margin-right:auto;margin-left:auto; z-index:99999">
+<!-- no ads -->
+</div></div>
+</html>
